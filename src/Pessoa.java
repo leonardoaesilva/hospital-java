@@ -1,13 +1,15 @@
 public abstract class Pessoa {
     private String nome;
-    private String cpf;
+    private String numeroCPF;
 
     public Pessoa() {}
 
-    public Pessoa(String nome, String cpf) {
+    public Pessoa(String nome, String numeroCPF) {
         this.nome = nome;
-        this.cpf = cpf;
+        this.numeroCPF = numeroCPF;
     }
+
+    public abstract void darEntrada();
 
     public String getNome() {
         return nome;
@@ -17,13 +19,11 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getNumeroCPF() {
+        return numeroCPF;
     }
 
-//    public void setCpf(String cpf) {
-//        this.cpf = cpf;
-//    }
-
-    public abstract void darEntrada();
+    public void setNumeroCPF(String numeroCPF) {
+        this.numeroCPF = numeroCPF;
+    }
 }
