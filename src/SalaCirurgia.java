@@ -9,7 +9,9 @@ public class SalaCirurgia extends Sala {
             System.out.println("Sala já reservada!");
         else if ((dd <= 0 || dd > 31) || (mm <= 0 || mm > 12) || (aa < 0 || aa > 99))
             System.out.println("Data inválida.");
-        else
+        else {
+            System.out.println("Sala reservada com sucesso para esta data.");
             super.setAlocada(true);
+        }
     }
 }
