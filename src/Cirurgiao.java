@@ -1,3 +1,5 @@
+import java.util.List;
+
 public final class Cirurgiao extends Medico {
     public Cirurgiao() {}
 
@@ -6,7 +8,12 @@ public final class Cirurgiao extends Medico {
     }
 
     @Override
-    public String realizarDiagnostico() {
-        return null;
+    public String realizarDiagnostico(List<String> sintomas) {
+        int contador = 0;
+
+        if (sintomas.contains("Fratura exposta") || sintomas.contains("Ligamento rompido") || sintomas.contains("Osso quebrado"))
+            contador++;
+
+        return contador + " cirurgia(s) deve(m) ser marcada(s).";
     }
 }

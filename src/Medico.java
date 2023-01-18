@@ -1,3 +1,5 @@
+import java.util.List;
+
 public abstract class Medico extends Funcionario {
     private String numeroCRM;
 
@@ -8,7 +10,7 @@ public abstract class Medico extends Funcionario {
         this.numeroCRM = numeroCRM;
     }
 
-    public abstract String realizarDiagnostico();
+    public abstract String realizarDiagnostico(List<String> sintomas);
 
     public String getNumeroCRM() {
         return numeroCRM;

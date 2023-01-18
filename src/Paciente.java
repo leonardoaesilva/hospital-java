@@ -21,7 +21,7 @@ public class Paciente extends Pessoa {
 //        this.sintomas = sintomas;
 //    }
 
-    public void addSintoma(String descricao) {
+    public void adcSintoma(String descricao) {
         this.sintomas.add(descricao);
     }
 }

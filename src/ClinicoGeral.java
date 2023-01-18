@@ -1,3 +1,5 @@
+import java.util.List;
+
 public final class ClinicoGeral extends Medico {
     public ClinicoGeral() {}
 
@@ -6,7 +8,9 @@ public final class ClinicoGeral extends Medico {
     }
 
     @Override
-    public String realizarDiagnostico() {
-        return null;
+    public String realizarDiagnostico(List<String> sintomas) {
+        if (sintomas.contains("Coriza"))
+            return sintomas.get(sintomas.indexOf("Coriza")) + " com certeza é virose.";
+        return "300ml de dipirona na veia e pronto.";
     }
 }

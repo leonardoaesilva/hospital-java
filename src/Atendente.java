@@ -12,7 +12,7 @@ public class Atendente extends Funcionario {
         if (isEmAtendimento())
             System.out.println("Atendentes indisponíveis no momento. Aguarde para ser atendido.");
         else {
-            System.out.println("Dirija-se ao balcão de atendimento.");
+            System.out.println("Dirija-se ao balcão de atendimento e informe seus dados.");
             setEmAtendimento(true);
         }
     }
