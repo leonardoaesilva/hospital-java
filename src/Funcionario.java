@@ -1,28 +1,29 @@
-public class Funcionario extends Pessoa {
-    private boolean isEmServico;
+public abstract class Funcionario extends Pessoa {
+    private boolean emServico;
     private Double salarioBase;
     private String turnoServico;
 
-    public Funcionario() {}
+    public Funcionario() {
+        this.emServico = false;
+    }
 
     public Funcionario(String nome, String numeroCPF, Double salarioBase, String turnoServico) {
         super(nome, numeroCPF);
-        this.isEmServico = false;
+        this.emServico = false;
         this.salarioBase = salarioBase;
         this.turnoServico = turnoServico;
     }
 
-    @Override
-    public void darEntrada() {
-        isEmServico = true;
+    public final void baterPonto() {
+        setEmServico(!emServico);
     }
 
     public boolean isEmServico() {
-        return isEmServico;
+        return emServico;
     }
 
     public void setEmServico(boolean emServico) {
-        isEmServico = emServico;
+        this.emServico = emServico;
     }
 
     public Double getSalarioBase() {

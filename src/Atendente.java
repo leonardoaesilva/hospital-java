@@ -1,18 +1,18 @@
 public class Atendente extends Funcionario {
-    private Byte linhaRamal;
+    private Integer linhaRamal;
 
     public Atendente() {}
 
-    public Atendente(String nome, String numeroCPF, Double salarioBase, String turnoServico, Byte linhaRamal) {
+    public Atendente(String nome, String numeroCPF, Double salarioBase, String turnoServico, Integer linhaRamal) {
         super(nome, numeroCPF, salarioBase, turnoServico);
         this.linhaRamal = linhaRamal;
     }
 
-    public Byte getLinhaRamal() {
+    public Integer getLinhaRamal() {
         return linhaRamal;
     }
 
-    public void setLinhaRamal(Byte linhaRamal) {
+    public void setLinhaRamal(Integer linhaRamal) {
         this.linhaRamal = linhaRamal;
     }
 }

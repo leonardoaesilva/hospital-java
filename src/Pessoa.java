@@ -9,8 +9,6 @@ public abstract class Pessoa {
         this.numeroCPF = numeroCPF;
     }
 
-    public abstract void darEntrada();
-
     public String getNome() {
         return nome;
     }

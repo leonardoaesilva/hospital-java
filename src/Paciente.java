@@ -1,23 +1,27 @@
-public class Paciente extends Pessoa {
-    private boolean isEmObservacao;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Paciente() {}
+public class Paciente extends Pessoa {
+    private List<String> sintomas;
+
+    public Paciente() {
+        this.sintomas = new ArrayList<>();
+    }
 
     public Paciente(String nome, String numeroCPF) {
         super(nome, numeroCPF);
-        this.isEmObservacao = false;
+        this.sintomas = new ArrayList<>();
     }
 
-    @Override
-    public void darEntrada() {
-        isEmObservacao = true;
+    public List<String> getSintomas() {
+        return sintomas;
     }
 
-    public boolean isEmObservacao() {
-        return isEmObservacao;
-    }
+//    public void setSintomas(List<String> sintomas) {
+//        this.sintomas = sintomas;
+//    }
 
-    public void setEmObservacao(boolean emObservacao) {
-        isEmObservacao = emObservacao;
+    public void addSintoma(String descricao) {
+        this.sintomas.add(descricao);
     }
 }
