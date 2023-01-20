@@ -16,7 +16,7 @@ public abstract class Medico extends Funcionario {
         return numeroCRM;
     }
 
-    public void setNumeroCRM(String numeroCRM) {
-        this.numeroCRM = numeroCRM;
-    }
+//    public void setNumeroCRM(String numeroCRM) {
+//        this.numeroCRM = numeroCRM;
+//    }
 }

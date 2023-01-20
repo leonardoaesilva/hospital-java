@@ -31,7 +31,7 @@ public abstract class Pessoa {
         return numeroCPF;
     }
 
-    public void setNumeroCPF(String numeroCPF) {
-        this.numeroCPF = numeroCPF;
-    }
+//    public void setNumeroCPF(String numeroCPF) {
+//        this.numeroCPF = numeroCPF;
+//    }
 }
