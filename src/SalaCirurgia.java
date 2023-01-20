@@ -1,6 +1,8 @@
 public class SalaCirurgia extends Sala {
     private boolean alocada;
 
+    public SalaCirurgia() {}
+
     public SalaCirurgia(String ala, String bloco) {
         super(ala, bloco);
     }
